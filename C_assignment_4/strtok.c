@@ -3,7 +3,7 @@
   
 int main() 
 { 
-    char str[] = "My-name-is-Subodh"; 
+    char str[] = "My-name-is-Vineeth"; 
   
     // Returns first token 
     char* token = strtok(str, "-"); 
