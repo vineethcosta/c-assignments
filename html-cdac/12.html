@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>12</title>
+</head>
+<body>
+    <form>
+        First name:<br>
+        <input id ="fn" type="text" name="firstname"><br>
+        Last name:<br>
+        <input id ="ln" type="text" name="lastname">
+       
+    </form>
+    <button id="myBtn" >submit</button>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("myBtn").addEventListener("click", function () {
+            document.getElementById("demo").innerHTML = "First name is" + document.getElementById("fn").value;
+        });
+    </script>
+</body>
+</html>

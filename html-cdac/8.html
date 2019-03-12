@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>8</title>
+    </head>
+<body>
+    <p id ="paraid" style="background-color:blue;">Hi yfg2ugf2ljb 2gf 23o hr23ohr23orh 23orh</p>
+    
+    <img id="img" src="ml2.png" style="width:300px" />
+    <button onclick="changecolor()" id="btn">change color</button>
+    <script>
+        function changecolor(){
+            var col = document.getElementById("paraid").style.backgroundColor;
+            if (col == "blue") {
+                document.getElementById("paraid").style.backgroundColor = "pink";
+                document.getElementById("img").src = "ml.png";
+            }
+            else {
+                document.getElementById("paraid").style.backgroundColor = "blue";
+                document.getElementById("img").src = "ml2.png";
+            }
+        };
+    </script>
+</body>
+
+</html>

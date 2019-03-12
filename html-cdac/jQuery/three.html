@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+  
+
+    <input type="button" id="show" value="hide"/>
+
+    <form>
+        <div class="add2">
+            <h1>Current address</h1>
+            House No:<input type="text" name="houseno" id="hsn" />
+            Locality:<input type="text" name="locality" id="loc" />
+            Mandal:<input type="text" name="Mandal" id="man" />
+            State:<input type="text" name="State" id="sta" />
+            Pincode:<input type="text" name="Pincode" id="pin" />
+        </div>
+    </form>
+    <script>
+        $(document).ready(function () {
+            $("#show").click(function () {
+                $(".add2").toggle();
+                if($("#show").val()=="show")
+                    $("#show").val("hide");
+                else
+                    $("#show").val("show");
+            });
+
+            });
+    </script>
+</body>
+</html>

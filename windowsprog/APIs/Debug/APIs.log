@@ -1,0 +1,5 @@
+﻿  APIs.cpp
+c:\users\vishal\documents\visual studio 2015\projects\windowsprog\apis\apis.cpp(16): warning C4800: 'BOOL': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\vishal\documents\visual studio 2015\projects\windowsprog\apis\apis.cpp(18): warning C4800: 'BOOL': forcing value to bool 'true' or 'false' (performance warning)
+  APIs.vcxproj -> C:\Users\vishal\Documents\Visual Studio 2015\Projects\windowsprog\Debug\APIs.exe
+  APIs.vcxproj -> C:\Users\vishal\Documents\Visual Studio 2015\Projects\windowsprog\Debug\APIs.pdb (Full PDB)

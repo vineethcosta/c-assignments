@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    Enter text here<input id="add" type="text" name="enter" placeholder="Enter here to append"/>
+    <p id="para"></p>
+    click to add :<input id="but" type="submit" name="addit" value="addit"/>
+    <script>
+        $(document).ready(function () {
+            $("#but").click(function () {
+                $("#para").append($("#add").val());
+            });
+            
+        });
+    </script>
+</body>
+</html>

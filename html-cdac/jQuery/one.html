@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <form>
+        <h1>
+            Permanant address
+        </h1>
+        <div class="add">
+            House No:<input type="text" name="houseno" id="hsn1" />
+            Locality:<input type="text" name="locality" id="loc1" />
+            Mandal:<input type="text" name="Mandal" id="man1" />
+            State:<input type="text" name="State" id="sta1" />
+            Pincode:<input type="text" name="Pincode" id="pin1" />
+            <input type="checkbox" id="checkit" />Click to copy 
+        </div>
+       
+    </form>
+
+    <input type="checkbox" id="show" />Dont Show current address 
+  
+    <form>
+        <div class="add2">
+            <h1>Current address</h1>
+            House No:<input type="text" name="houseno" id="hsn" />
+            Locality:<input type="text" name="locality" id="loc" />
+            Mandal:<input type="text" name="Mandal" id="man" />
+            State:<input type="text" name="State" id="sta" />
+            Pincode:<input type="text" name="Pincode" id="pin" />
+        </div>
+    </form>
+    <script>
+        $(document).ready(function () {
+            $("#checkit").click(function() {
+                if($(this).is(':checked')){
+                    $("#hsn").val($("#hsn1").val());
+                    $("#loc").val($("#loc1").val());
+                    $("#man").val($("#man1").val());
+                    $("#sta").val($("#sta1").val());
+                    $("#pin").val($("#pin1").val());
+                }
+                else {
+                    $("#hsn").val(" ");
+                    $("#loc").val(" ");
+                    $("#man").val(" ");
+                    $("#sta").val(" ");
+                    $("#pin").val(" ");
+                }
+            });
+            $("#show").click(function () {
+                $(".add2").toggle()
+            });
+           
+            });
+    </script>
+</body>
+</html>

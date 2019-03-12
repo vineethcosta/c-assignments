@@ -1,0 +1,4 @@
+﻿  dumpexpand.cpp
+c:\users\vishal\documents\visual studio 2015\projects\windowsprog\dumpexpand\dumpexpand.cpp(20): warning C4477: 'wprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 2 has type 'PTSTR *'
+  dumpexpand.vcxproj -> C:\Users\vishal\Documents\Visual Studio 2015\Projects\windowsprog\Debug\dumpexpand.exe
+  dumpexpand.vcxproj -> C:\Users\vishal\Documents\Visual Studio 2015\Projects\windowsprog\Debug\dumpexpand.pdb (Full PDB)
