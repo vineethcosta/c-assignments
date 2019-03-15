@@ -30,7 +30,7 @@ int max = 0;
 
 	findinorder(root->right,x,0,root);
 }
- int findmax(node* root)
+ int findmax(node* root)  //to find max element
  {
 	 if (root == NULL)
 		 return;
@@ -55,7 +55,7 @@ node* insert(node* root, int x)
 {
 	node *temp;
 	temp = new node();
-	if (root == NULL)
+	if (root == NULL)//create a node if null
 	{
 		
 		temp->data = x;
@@ -100,7 +100,7 @@ int main()
 	cout << "Enter no of elements to insert";
 	cin >> n;
 	cin >> x;
-	root = insert(root, x);
+	root = insert(root, x); //obtain the root node address after first insertion
 	for (int i = 0; i < n-1; i++)
 	{
 		cin >> x;
