@@ -7,28 +7,28 @@
 #include<string>
 using namespace std;
 class Complex {
-	int real, img;
+	int real, img; //private members
 	public:
-		Complex()
+		Complex() //default constructor
 		{
 			real = 0;
 			img = 0;
 		}
-		Complex(int i)
+		Complex(int i) //parameterised constructor
 		{
 			real = img = i;
 
 		}
-		Complex(int i, int j)
+		Complex(int i, int j)  
 		{
 			real = i;
 			img = j;
 		}
-		friend void addit(const Complex &, const Complex &,Complex );
+		friend void addit(const Complex &, const Complex &,Complex ); //friend function which can access private and protected members of class
 		friend void mulit(const Complex &, const Complex &, Complex);
 
 };
-void addit(const Complex &c1, const Complex &c2,Complex c3)
+void addit(const Complex &c1, const Complex &c2,Complex c3)  //taking reference variables
 {
 	
 	c3.real = c1.real + c2.real;
